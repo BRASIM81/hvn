@@ -1,0 +1,29 @@
+.carousel
+	header
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 4
+		background-color: rgba(0, 0, 0, 0.4)
+		h1
+			color: #fff
+			font-size: 8rem
+			position: relative
+			&::after, &::before
+				content: ''
+				height: 0.012em
+				width: 80%
+				background-color: #fff
+				position: absolute
+				left: 10%
+			&::before
+				top: -15%
+			&::after
+				bottom: -15%
+
+	.carousel-inner
+		.carousel-item
+			height: 400px
+			top: -150px

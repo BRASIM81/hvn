@@ -1,0 +1,65 @@
+.modal.fade
+	background: rgba(0,0,0,0.6)
+	.modal-dialog
+		max-width: 60vw
+		margin: 2rem auto
+		@media (max-width: 975px)
+			max-width: 80vw
+		transition: all cubic-bezier(.21, -2, .51, 3.4) 300ms
+		.modal-content
+			background: linear-gradient(-185deg, lighten($c1, 50%) 0%, darken($c1, 4%) 100%)
+			border: 0
+			.modal-header
+				border: 0
+				button
+					font-size: 4rem
+					position: absolute
+					top: 0px
+					right: 30px
+					transition: all ease 300ms
+					&:hover
+						transform: scale(1.4)
+				h4
+					margin: auto
+					letter-spacing: 0.3em
+					margin-bottom: 0px
+					font: 3rem $mainFont
+				i
+					font-size: 1.5rem
+					position: absolute
+					left: 1.2em
+					top: 1.2em
+					color: #222
+			.modal-body
+				a
+					font-size: 2rem
+					letter-spacing: 0.2em
+					margin: auto
+					border-radius: .25em
+					text-shadow: -1px 1px 1px #000
+					transition: all ease 300ms
+					&:hover
+						transform: translateY(3px)
+						box-shadow: 0 10px 6px -7px #000
+					i.fab, i.far
+						float: left
+						line-height: 2rem
+						margin-left: 30px
+						margin: 10px
+					&:hover
+						i.fab, i.far
+							animation-name: tada
+							animation-duration: 1s
+			.modal-footer
+				border: 0
+				button
+					background: linear-gradient(-8deg, lighten($forthcol, 25%) 0%, $forthcol 100%)
+					color: #fff
+					font-size: 1.5rem
+					letter-spacing: 0.2em
+					padding: .2em .8em
+					transition: all ease 300ms
+					&:hover
+						transform: translateY(3px)
+						box-shadow: 0 10px 6px -7px #000
+					
