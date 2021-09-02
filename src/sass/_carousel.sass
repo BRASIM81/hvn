@@ -9,8 +9,10 @@
 		background-color: rgba(0, 0, 0, 0.4)
 		h1
 			color: #fff
-			font-size: 8rem
+			font-size: 4rem
 			position: relative
+			@media (min-width: 768px)
+				font-size: 8rem
 			&::after, &::before
 				content: ''
 				height: 0.012em
@@ -25,5 +27,11 @@
 
 	.carousel-inner
 		.carousel-item
-			height: 400px
-			top: -150px
+			height: 200px
+			@media (min-width:768px)
+				height: 400px
+				top: -150px
+			img 
+				height: 150%
+				@media (min-width: 768px)
+					height: auto
