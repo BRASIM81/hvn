@@ -1,5 +1,10 @@
 new WOW().init();
 
+
+var d = new Date();
+var y = d.getFullYear();
+document.getElementById("copy").innerHTML = "Hayleys Nails & Lashes " + y;
+
 window.onload = function(){
   if(document.cookie.length != 0){
      var cookieVal = document.cookie.split("=");
@@ -59,4 +64,4 @@ function myMap() {
       position: myCenter,
   });
   marker.setMap(map);
-};
+}
