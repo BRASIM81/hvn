@@ -2,10 +2,10 @@
   position: fixed
   top: 65vh
   left: 0
-  background: #903487
+  background-image: linear-gradient($thirdcol 30%, lighten($thirdcol, 20%) 100%)
   border-bottom-right-radius: 10px
   border-top-right-radius: 10px
-  box-shadow: 0 2px 10px #000000
+  box-shadow: 0 2px 10px -1px #000000
   z-index: 999
   opacity: 0
   transform: translate(-100% 0)
@@ -16,7 +16,7 @@
     transition: ease-in-out 400ms
     &:hover
       animation-name: wobble
-      animation-duration: 1s
+      animation-duration: 800ms
       @media (min-width: 975px)
         padding-left: 25px
     .fa-arrow-up
