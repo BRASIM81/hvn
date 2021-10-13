@@ -1,6 +1,23 @@
+.dshadow
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.35)
 @mixin d-shadow
-    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5) 
-    transition: all ease-in-out 300ms
-    &:hover
-      transform: translateY(3px)
-      box-shadow: 0 8px 5px -6px rgba(black, 0.4)
+  @extend .dshadow
+  transition: all ease-in-out 300ms
+  &:hover
+    transform: translateY(3px)
+    box-shadow: 0 8px 5px -6px rgba(black, 0.5)
+@mixin p-curl($height)
+  position: relative
+  &::before, &::after
+    content: ''
+    position: absolute
+    top: 95%
+    bottom: $height
+    left: 12px
+    right: 12px
+    box-shadow: 0 5px 8px 6px rgba(black, 0.7)
+    z-index: -1
+  &::before
+    transform: rotate(-2.8deg)
+  &::after
+    transform: rotate(2.8deg)
