@@ -6,18 +6,21 @@
 		right: 0
 		bottom: 0
 		z-index: 4
-		background-color: rgba(0, 0, 0, 0.4)
+		background-color: hsla(0, 0, 3, 0.6)
 		h1
-			color: #fff
+			// color: #fff
 			font-size: 4rem
 			position: relative
+			background: linear-gradient(lighten($thirdcol, 10%) 20%, lighten($thirdcol, 30%))
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
 			@media (min-width: 768px)
 				font-size: 6rem
 			&::after, &::before
 				content: ''
 				height: 0.012em
 				width: 80%
-				background-color: #fff
+				background-color: lighten($thirdcol, 15%)
 				position: absolute
 				left: 10%
 			&::before
