@@ -8,12 +8,16 @@
 		width: 100%
 		background-color: rgba(0, 0, 0, 0.5)
 		#googleMap
-			height: 400px
+			// height: 400px
+			aspect-ratio: 6 / 3
 			width: 100%
 			padding: 0
 			margin: 0
 			border-radius: 10px
 			@extend .dshadow
+			@media ( max-width: 768px )
+				aspect-ratio: 1/1
+				
 		.col-sm-4
 			p 
 				font-size: 2rem
