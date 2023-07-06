@@ -1,4 +1,12 @@
 .carousel
+	.carousel-inner
+		aspect-ratio: 22 / 7
+		@media ( max-width: 768px  )
+			aspect-ratio: 20 / 10
+		.carousel-item
+			img 
+				object-fit: cover
+				object-position: center bottom
 	header
 		position: absolute
 		top: 0
@@ -6,8 +14,8 @@
 		right: 0
 		bottom: 0
 		z-index: 4
-		background-color: rgba(0, 0, 9, 0.7)
-		backdrop-filter: blur(4px)
+		background-color: rgba(0, 0, 0, 0.4)
+		
 		h1
 			color: #fff
 			font-size: 4rem
@@ -25,14 +33,3 @@
 				top: -15%
 			&::after
 				bottom: -15%
-
-	.carousel-inner
-		.carousel-item
-			height: 200px
-			@media (min-width:768px)
-				height: 400px
-				top: -150px
-			img 
-				height: 150%
-				@media (min-width: 768px)
-					height: auto
